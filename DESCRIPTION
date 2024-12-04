@@ -18,5 +18,9 @@ BugReports: https://github.com/rdatatoolbox/practice-1/issues
 License: GPL-2
 Encoding: UTF-8
 Imports:
+    dplyr,
     here,
+    quarto,
     utils
+Depends:
+  ggplot2

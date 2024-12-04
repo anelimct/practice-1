@@ -1,0 +1,39 @@
+---
+title: "index"
+author: "Miléna"
+format: html
+editor: visual
+execute:
+  warning: false
+---
+
+## Créer une carte du nombre décorégions par espèces de la famille des ursidae
+
+```{r}
+devtools::load_all()
+```
+
+Lecture des fichiers csv présents dans data
+
+```{r}
+
+load_data()
+```
+
+Filter only data for the family ursidae and join datasets
+
+```{r}
+ursidae <- select_ursidae(`wildfinder-mammals_list`)
+joined <- join_3_tables(`wildfinder-ecoregions_list`, `wildfinder-ecoregions_species`, ursidae)
+
+```
+
+This how many ecoregions for each species
+
+```{r}
+#| label: 'fig-species-ecoregions-plot'
+#| fig-cap: "Number of ecoregions for all species of the family Ursidae"
+
+graph_ecoregions_per_species(joined)
+```
+Ceci est ma @fig-species-ecoregions-plot

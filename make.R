@@ -15,7 +15,7 @@
 
 ## Install packages ----
 
-devtools::install_deps(upgrade = "never")
+devtools::install_deps()
 
 
 ## Load packages & functions ----
@@ -29,3 +29,8 @@ devtools::load_all()
 ## Download raw data ----
 
 source(here::here("analyses", "download-data.R"))
+
+quarto::quarto_render("index.qmd")
+
+
+
