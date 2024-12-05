@@ -20,7 +20,7 @@ devtools::install_deps()
 
 ## Load packages & functions ----
 
-devtools::load_all()
+#devtools::load_all()
 
 
 
@@ -32,5 +32,8 @@ source(here::here("analyses", "download-data.R"))
 
 quarto::quarto_render("index.qmd")
 
+library(targets)
 
-
+targets::tar_config_set(store = "outputs/pipeline", 
+script = "analyses/pipeline.R")
+targets::use_targets()

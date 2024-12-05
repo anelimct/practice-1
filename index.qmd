@@ -27,6 +27,8 @@ ursidae <- select_ursidae(`wildfinder-mammals_list`)
 joined <- join_3_tables(`wildfinder-ecoregions_list`, `wildfinder-ecoregions_species`, ursidae)
 
 ```
+There are n species in the genera parameter
+
 
 This how many ecoregions for each species
 

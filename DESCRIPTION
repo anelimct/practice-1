@@ -21,6 +21,7 @@ Imports:
     dplyr,
     here,
     quarto,
+    tarchetypes,
     utils
 Depends:
   ggplot2

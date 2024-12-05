@@ -1,0 +1,20 @@
+---
+title: "graph_eco_region"
+author: "Miléna"
+format: html
+editor: visual
+---
+
+```{r}
+targets::tar_config_set(store = "outputs/pipeline", 
+script = "analyses/pipeline.R")
+targets::use_targets()
+
+```
+
+```{r}
+
+targets::tar_read("plot")
+ plot
+
+```

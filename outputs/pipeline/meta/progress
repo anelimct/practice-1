@@ -1,0 +1,13 @@
+name|type|parent|branches|progress
+raw_sp_eco_file|stem|raw_sp_eco_file|0|skipped
+raw_eco_list_file|stem|raw_eco_list_file|0|skipped
+raw_sp_list_file|stem|raw_sp_list_file|0|skipped
+raw_sp_eco|stem|raw_sp_eco|0|skipped
+raw_eco_list|stem|raw_eco_list|0|skipped
+raw_sp_list|stem|raw_sp_list|0|skipped
+sp_list|stem|sp_list|0|skipped
+data|stem|data|0|skipped
+plot|stem|plot|0|dispatched
+plot|stem|plot|0|completed
+report|stem|report|0|dispatched
+report|stem|report|0|completed
